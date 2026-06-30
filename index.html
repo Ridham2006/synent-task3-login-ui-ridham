@@ -4,57 +4,45 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <title>Velocity | Login</title>
 
-    <title>Authentication</title>
+    <!-- Google Fonts -->
 
-    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet">
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
 
-    <link rel="stylesheet"
-          href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
-
 <body>
 
-    <!-- Animated Background -->
+<main class="login-page">
 
-    <div class="background">
+    <div class="background-shape shape-1"></div>
+    <div class="background-shape shape-2"></div>
 
-    <span class="blob blob-1"></span>
+    <section class="login-container">
 
-    <span class="blob blob-2"></span>
+        <div class="login-card">
 
-    <span class="blob blob-3"></span>
+            <!-- Header -->
 
-</div>
-
-    <main class="auth-container">
-
-        <!-- Authentication Card -->
-
-        <div class="auth-card">
-
-            <!-- Card Header -->
-
-            <div class="card-header">
+            <div class="login-header">
 
                 <div class="logo">
-                    ⚡
+                    <i class="fa-solid fa-shield"></i>
                 </div>
 
                 <h1>Welcome Back</h1>
@@ -65,41 +53,95 @@
 
             </div>
 
-            <!-- Card Body -->
+            <!-- Form -->
 
-            <div class="card-body">
+            <form>
 
-                <!-- Login Form -->
+                <!-- Email -->
 
-                <form class="login-form">
+                <div class="input-group">
 
-                </form>
+                    <label for="email">
+                        Email Address
+                    </label>
 
-                <!-- Signup Form -->
+                    <div class="input-box">
 
-                <form class="signup-form">
+                        <i class="fa-solid fa-envelope input-icon"></i>
 
-                </form>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                        >
 
-                <!-- Forgot Password Form -->
+                    </div>
 
-                <form class="forgot-form">
+                </div>
 
-                </form>
+                <!-- Password -->
 
-            </div>
+                <div class="input-group">
 
-            <!-- Card Footer -->
+                    <label for="password">
+                        Password
+                    </label>
 
-            <div class="card-footer">
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-lock input-icon"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                        >
+
+                        <i class="fa-solid fa-eye toggle-password"></i>
+
+                    </div>
+
+                </div>
+
+                <!-- Forgot Password -->
+
+                <div class="form-options">
+
+                    <a href="#">Forgot Password?</a>
+
+                </div>
+
+                <!-- Button -->
+
+                <button type="submit" class="login-btn">
+
+                    Login
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+            <!-- Signup -->
+
+            <div class="signup-link">
+
+                <p>
+
+                    Don't have an account?
+
+                    <a href="#">Create Account</a>
+
+                </p>
 
             </div>
 
         </div>
 
-    </main>
+    </section>
 
-    <script src="assets/js/script.js"></script>
+</main>
 
 </body>
 
