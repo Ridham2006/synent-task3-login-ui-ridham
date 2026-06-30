@@ -20,6 +20,17 @@ togglePassword.addEventListener("click", () => {
     }
 
 });
+// const card = document.querySelector(".login-card");
+
+// card.addEventListener("click", (e) => {
+
+//     if(!card.classList.contains("active")){
+
+//         card.classList.add("active");
+
+//     }
+
+// });
 const header = document.querySelector(".login-header");
 
 const card = document.querySelector(".login-card");

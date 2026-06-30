@@ -317,6 +317,7 @@ transform:translateY(-4px) scale(1.02);
 box-shadow:0 15px 30px rgba(139,92,246,.35);
 
 }
+
 .login-btn::before{
 
     content:"";
@@ -517,5 +518,27 @@ animation:float 3s ease-in-out infinite;
         transform:translate(40px,-30px);
 
     }
+
+}
+
+/* forgot-password */
+.login-btn i{
+
+    margin-left:8px;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover i{
+
+    transform:translateX(6px);
+
+}
+.login-card{
+
+    max-width:460px;
+
+    padding:3rem;
 
 }
