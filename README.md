@@ -68,6 +68,7 @@ auth-ui/
               ├── login.png
               ├── register.png
               └── forgot-password.png
+```
 ---
 
 ## Author
