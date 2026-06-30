@@ -76,6 +76,8 @@ body{
 
     left:-80px;
 
+     animation:blobMove 10s ease-in-out infinite alternate;
+
 }
 .shape-2{
 
@@ -89,6 +91,7 @@ body{
 
     bottom:-100px;
 
+         animation:blobMove 10s ease-in-out infinite alternate;
 }
 .login-container{
 
@@ -108,9 +111,7 @@ body{
 .login-card{
 
     width:100%;
-
     max-width:420px;
-
     padding:2.5rem;
 
     background:var(--card-bg);
@@ -123,12 +124,16 @@ body{
 
     box-shadow:0 20px 60px rgba(0,0,0,.35);
 
+    animation:cardAppear .8s ease forwards;
+
 }
 .login-header{
 
     text-align:center;
 
     margin-bottom:2rem;
+
+    animation:slideDown .8s ease;
 
 }
 .logo{
@@ -156,7 +161,7 @@ body{
     align-items:center;
 
     font-size:1.8rem;
-
+    animation: float 3s ease-in-out infinite; 
 }
 .input-group{
 
@@ -172,7 +177,7 @@ body{
 
     color:var(--text-color);
 
-    font-size:.95rem;
+    font-size:1rem;
 
     font-weight:500;
 
@@ -192,6 +197,11 @@ body{
     padding:0 1rem;
 
     transition:.3s ease;
+
+}
+.input-box:hover{
+
+    transform:translateY(-2px);
 
 }
 .input-box:focus-within{
@@ -250,6 +260,24 @@ input:-webkit-autofill{
     color:var(--primary-color);
 
 }
+.login-content{
+
+    max-height:0;
+
+    opacity:0;
+
+    overflow:hidden;
+
+    transition:.6s ease;
+
+}
+.login-card.active .login-content{
+
+    max-height:500px;
+
+    opacity:1;
+
+}
 .login-btn{
 
     width:100%;
@@ -278,12 +306,45 @@ input:-webkit-autofill{
 
     margin-top:1rem;
 
+        position:relative;
+
+    overflow:hidden;
+
 }
 .login-btn:hover{
 
-    transform:translateY(-3px);
+transform:translateY(-4px) scale(1.02);
+box-shadow:0 15px 30px rgba(139,92,246,.35);
 
-    box-shadow:0 15px 30px rgba(139,92,246,.35);
+}
+.login-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.2);
+
+    transform:skewX(-25deg);
+
+    transition:.6s;
+}
+.login-btn:hover::before{
+
+    left:120%;
+
+}
+form{
+
+    animation:fadeUp 1s ease;
 
 }
 .form-options{
@@ -337,5 +398,124 @@ input:-webkit-autofill{
 
     text-decoration:underline;
     color: #1E1B4B;
+
+}
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+.logo{
+
+animation:float 3s ease-in-out infinite;
+
+}
+@keyframes cardAppear{
+
+    0%{
+
+        transform:scale(.85);
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+@keyframes slideDown{
+
+    from{
+
+        transform:translateY(-30px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+}
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}@keyframes blobMove{
+
+    from{
+
+        transform:translate(0,0);
+
+    }
+
+    to{
+
+        transform:translate(40px,-30px);
+
+    }
 
 }
