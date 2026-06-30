@@ -46,24 +46,23 @@ This is a modern authentication interface built using HTML, CSS, and JavaScript.
 
 ---
 
-## Folder Structure
+## 📂 Folder Structure
 
 ```text
+synent-task3-auth-ui/
 
-auth-ui/
+│── README.md
+└── auth-ui/
     │── login.html
     │── register.html
     │── forgot-password.html
     │── .gitignore
-    │── README.md
+    |
     └── assets/
-        │
         ├── css/
         │     └── style.css
-        │
         ├── js/
         │     └── script.js
-        │
         └── screenshots/
               ├── login.png
               ├── register.png
