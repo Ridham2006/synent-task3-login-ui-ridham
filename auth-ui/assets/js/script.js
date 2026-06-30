@@ -35,3 +35,34 @@ header.addEventListener("click",()=>{
     card.classList.add("active");
 
 });
+const forms = document.querySelectorAll("form");
+
+forms.forEach((form) => {
+
+    form.addEventListener("submit", (e) => {
+
+        e.preventDefault();
+
+        const page = window.location.pathname;
+
+        if (page.includes("login")) {
+
+            alert("Successfully logged in.");
+
+        }
+
+        else if (page.includes("register")) {
+
+            alert("successfully registered.");
+
+        }
+
+        else if (page.includes("forgot-password")) {
+
+            alert("Reset link has been sent on your email.");
+
+        }
+
+    });
+
+});

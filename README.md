@@ -2,11 +2,11 @@
 
 ## Project Preview
 
-![Login Page](assets/screenshots/login.png)
+![Login Page](auth-ui/assets/screenshots/login.png)
 
-![Register Page](assets/screenshots/register.png)
+![Register Page](auth-ui/assets/screenshots/register.png)
 
-![Forgot Password Page](assets/screenshots/forgot-password.png)
+![Forgot Password Page](auth-ui/assets/screenshots/forgot-password.png)
 
 ---
 
