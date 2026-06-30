@@ -1,6 +1,6 @@
 # Login-Page-UI
 
-## 📸 Project Preview
+## Project Preview
 
 ![Login Page](assets/screenshots/login.png)
 
@@ -10,13 +10,13 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 This is a modern authentication interface built using HTML, CSS, and JavaScript. The project features a premium glassmorphism design, smooth animations, responsive layouts.
 
 ---
 
-## ✨ Features
+## Features
 
 - Modern Glassmorphism UI
 - Responsive Design
@@ -28,7 +28,7 @@ This is a modern authentication interface built using HTML, CSS, and JavaScript.
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3
@@ -38,7 +38,7 @@ This is a modern authentication interface built using HTML, CSS, and JavaScript.
 
 ---
 
-## 📱 Responsive Design
+## Responsive Design
 
 - Desktop
 - Tablet
@@ -46,40 +46,31 @@ This is a modern authentication interface built using HTML, CSS, and JavaScript.
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```text
+
 auth-ui/
-
-│── login.html
-│── register.html
-│── forgot-password.html
-│── README.md
-│── .gitignore
-│
-└── assets/
-    │
-    ├── css/
-    │     └── style.css
-    │
-    ├── js/
-    │     └── script.js
-    │
-    └── screenshots/
-          ├── login.png
-          ├── register.png
-          └── forgot-password.png
-```
-
-## 🚀 How to Run
-
-1. Clone the repository
-2. Open the project folder
-3. Open `login.html` in your browser
-
+    │── login.html
+    │── register.html
+    │── forgot-password.html
+    │── .gitignore
+    │── README.md
+    └── assets/
+        │
+        ├── css/
+        │     └── style.css
+        │
+        ├── js/
+        │     └── script.js
+        │
+        └── screenshots/
+              ├── login.png
+              ├── register.png
+              └── forgot-password.png
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Ridham Shah**
 

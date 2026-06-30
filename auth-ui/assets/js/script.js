@@ -1,26 +1,31 @@
 const passwordInput = document.getElementById("password");
-const togglePassword = document.querySelector(".toggle-password");
+const toggleIcons = document.querySelectorAll(".toggle-password");
 
-togglePassword.addEventListener("click", () => {
+toggleIcons.forEach((icon) => {
 
-    if(passwordInput.type === "password"){
+    icon.addEventListener("click", () => {
 
-        passwordInput.type = "text";
+        const input = icon.previousElementSibling;
 
-        togglePassword.classList.remove("fa-eye");
-        togglePassword.classList.add("fa-eye-slash");
+        if (input.type === "password") {
 
-    }else{
+            input.type = "text";
 
-        passwordInput.type = "password";
+            icon.classList.remove("fa-eye");
+            icon.classList.add("fa-eye-slash");
 
-        togglePassword.classList.remove("fa-eye-slash");
-        togglePassword.classList.add("fa-eye");
+        } else {
 
-    }
+            input.type = "password";
+
+            icon.classList.remove("fa-eye-slash");
+            icon.classList.add("fa-eye");
+
+        }
+
+    });
 
 });
-
 const header = document.querySelector(".login-header");
 
 const card = document.querySelector(".login-card");
